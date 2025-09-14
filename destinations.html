@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>🌐 EXPLRit-Destinations</title>
+    <link rel="stylesheet" href="deststyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
-     <header>
+      <header>
         
         <div class="container">
             <nav>
-                <div class="logo">
-                   <h1>Explrit</h1>
+                 <div class="logo-container">
+                <div class="logo-row">
+                    <h1 class="logo-text">EXPLRit</h1>
+                    <img src="Explrit logo.png" alt="ExplrIt Company Logo" class="header-logo">
                 </div>
+                <p class="tagline">Explore Beyond Limits</p>
+            </div>
+
                
             <ul class="menu">
-                <li class="item"><a href="#home" class="navlink">Home</a></li>
-                <li class="item"><a href="#destinations" class="navlink">Destinations</a></li>
-                <li class="item"><a href="#packages" class="navlink">Package</a></li>
-                <li class="item"><a href="#blogs" class="navlink">Blogs</a></li>
+                <li class="item"><a href="home.html" class="navlink"><b>Home</b></a></li>
+                <li class="item"><a href="destinations.html" class="navlink"><b>Destinations</b></a></li>
+                <li class="item"><a href="packages.html" class="navlink"><b>Packages</b></a></li>
+                <li class="item"><a href="blogs.html" class="navlink"><b>Blogs</b></a></li>
             </ul>
             </nav>
         </div>
@@ -29,14 +36,8 @@
     <div id="destinations">
         <section class="section">
             <div class="container">
-                <h2 class="sectiontitle"><u>Explore Destinations</u></h2>
-            </div>
-            </section>
-    </div>
-
-             <!-- Category Filter Buttons -->
-                
-            
+                <h2 class="section-title"><u>Explore Destinations</u></h2>
+           
                 <input type="radio"  id="filter-all" checked>
                 <input type="radio"  id="filter-beach">
                 <input type="radio"  id="filter-mountain">
@@ -49,7 +50,144 @@
                     <label for="filter-mountain" class="filter-btn"><b>Mountains</b></label>
                     <label for="filter-city" class="filter-btn"><b>City</b></label>
                     <label for="filter-cultural" class="filter-btn"><b>Cultural</b></label>
-                </div>        
+                </div>  
+                 <div class="destinations-grid">
+                    <div class="destination-card beach" style="--i:1">
+                        <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barcelona" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">Barcelona, Spain</h3>
+                            <p class="card-text">Explore Gaudi's architecture and vibrant street life.</p>
+                            <p class="card-price">From $799</p>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card city" style="--i:2">
+                        <img src="https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="New York" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">New York, USA</h3>
+                            <p class="card-text">The city that never sleeps with endless attractions.</p>
+                            <p class="card-price">From $999</p>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card city" style="--i:3">
+                        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWl8ZW58MHx8MHx8fDA%3D" alt="Dubai" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">Dubai, UAE</h3>
+                            <p class="card-text">Luxury shopping, ultramodern architecture and lively nightlife.</p>
+                            <p class="card-price">From $1199</p>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card beach" style="--i:4">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bali" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">Bali, Indonesia</h3>
+                            <p class="card-text">A perfect blend of beaches, temples and vibrant culture.</p>
+                            <p class="card-price">From $699</p>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card mountain" style="--i:5">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Switzerland" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">Switzerland</h3>
+                            <p class="card-text">Pristine landscapes and charming alpine villages.</p>
+                            <p class="card-price">From $1299</p>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card cultural" style="--i:6">
+                        <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1bnNldHxlbnwwfHwwfHx8MA%3D%3D" alt="Tokyo" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">Tokyo, Japan</h3>
+                            <p class="card-text">A fascinating blend of traditional culture and technological innovation.</p>
+                            <p class="card-price">From $1099</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+               
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <footer>
+        <div class="footercontainer">
+            <div class="footersection">
+                <h3>About EXPLRit</h3>
+                <p>We are dedicated to providing exceptional travel experiences with carefully crafted packages and personalized service.</p>
+               <div class="sociallinks">
+  <a href="https://facebook.com/yourpage"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com/yourprofile"><i class="fab fa-instagram"></i></a>
+  <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://youtube.com/yourchannel"><i class="fab fa-youtube"></i></a>
+</div>
+
+         
+            </div>
+         </div>
+
+          
+            <div class="footersection">
+                <h3>Quick Links</h3>
+                <ul class="footerlinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footersection">
+                <h3>Contact Us</h3>
+                <ul class="footerlinks">
+                    <li class="contact"> Nizamuddinpura
+                        <br>
+                        Behind electricity dicision office 2, Varanasi, Uttar Pradesh 221002
+                       
+                    </li>
+                    <li class="contact">Phone: +1 (555) 123-4567</li>
+                    <li class="contact">Email: info@explrit.com</li>
+                    <li class="contact">Fax: +1 (555) 765-4321</li>
+
+                </ul>
+            </div>
+
+            <div class="footersection">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for travel tips and exclusive offers.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" style="padding:10px; width:100%; margin-bottom:10px; border-radius:5px; border:none">
+                    <button type="submit" class="btn" style="width:100%;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footercopyright">
+            <p>&copy; 2025 Explrit Travel Agency. All rights reserved.</p>
+        </div>
+
+     </footer>
+</body>
+</html>
 
 
 </body>
