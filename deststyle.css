@@ -162,7 +162,7 @@ nav {
   transition: 0.3s;
   text-decoration: none;
 }
-
+ 
 .sociallinks a:hover {
   background-color: #ff6f61; 
   transform: translateY(-5px);
@@ -257,29 +257,41 @@ input[type="radio"] {
              display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 gap: 30px;
+                 align-items: stretch;
         }
+     
 
         .destination-card
         {
             background-color: white ;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
             overflow :hidden;
             animation:fadeIn 1s ease 1s forwards;
             opacity: 0.9;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
             animation-delay:0.2s;
-
         }
+
+             
+   
+
+
+        
+       
         .card-img
         {
             height:200px;
             width:100%;
+            display:block;
             object-fit: cover;
             transition: all 0.3s ease;
-
         }
-        .destination-card:hover .card-img {
+     .destination-card:hover .card-img {
             transform: scale(1.1);
         }
 
@@ -287,8 +299,8 @@ input[type="radio"] {
         .destination-card:hover
         {
             transition: transform 0.3s ease;
-
-            /* transform: scale(1.1); */
+                
+             transform: scale(1.1); 
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
            
         }
@@ -310,7 +322,7 @@ input[type="radio"] {
         }
         .card-price
         {
-            font-size: 1.2 rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: #e74c3c;
         }
@@ -322,6 +334,122 @@ input[type="radio"] {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .destinations-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .card-img {
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-price {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+
+    header {
+        padding: 0.8rem 0.5rem;
+    }
+
+    .logo-text {
+        font-size: 50px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .navlink {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+    .destinations-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .card-img {
+        height: 160px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-price {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    .logo-text {
+        font-size: 40px;
+    }
+
+    .tagline {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .category-filter {
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    .footersection {
+        margin-bottom: 30px;
     }
 }
 

@@ -6,7 +6,7 @@
     <title>🌐 EXPLRit-Home</title>
     <link rel="stylesheet" href="styles.css">
   
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -27,7 +27,7 @@
             <ul class="menu">
                 <li class="item"><a href="home.html" class="navlink"><b>Home</b></a></li>
                 <li class="item"><a href="destinations.html" class="navlink"><b>Destinations</b></a></li>
-                <li class="item"><a href="packages.html" class="navlink"><b>Packages</b></a></li>
+                <li class="item"><a href="package.html" class="navlink"><b>Packages</b></a></li>
                 <li class="item"><a href="blogs.html" class="navlink"><b>Blogs</b></a></li>
             </ul>
             </nav>
@@ -43,14 +43,111 @@
                 <a href="destinations.html" class="btn">Explore Destinations</a>
             </div>
         </div>
+        </div>
+  
 
+
+        <!-- Slideshow start -->
+     <div class="carousel">
+        <div class="carouselbody">
+        <input type="radio" name="slide" id="s1" >
+         <input type="radio" name="slide" id="s2" >
+          <input type="radio" name="slide" id="s3" >
+          <input type="radio" name="slide" id="s4">
+<input type="radio" name="slide" id="s5">
+
+          <div class="slides">
+            <div class="slide"><img src="slide1.avif"></div>
+            <div class="slide"><img src="slide2.avif"></div>
+          <div class="slide"><img src="slide3.avif"></div>
+            <div class="slide"><img src="slide4.avif"></div>
+            <div class="slide"><img src="slide5.avif"></div>
+           
+          </div>
+
+          <div class="navdots">
+            <label for="s1"></label>
+            <label for="s2"></label>
+            <label for="s3"></label>
+            <label for="s4"></label>
+            <label for="s5"></label>
+
+          </div>
+     </div>
+     </div>
+  <!-- Slideshow end  -->
    
+
+  <!-- form -->
+  
+<section class="reservation-section">
+    <h2 class="section-title">Book Your Trip with EXPLRit</h2>
+    <div class="reservation-form-container">
+        <form class="reservation-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" required>
+                    <option value="">Select Destination</option>
+                    <option value="paris">Paris</option>
+                    <option value="dubai">Dubai</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="bali">Bali</option>
+                    <option value="newyork">New York</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="travelers">Number of Travelers</label>
+                <input type="number" id="travelers" min="1" placeholder="Enter number of travelers" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="package">Package Type</label>
+                <select id="package" required>
+                    <option value="">Select Package</option>
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" rows="4" placeholder="Any special requests?"></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Ready to Hower !</button>
+        </form>
+    </div>
+</section>
+<!-- formend -->
+
     
 
      <footer>
         <div class="footercontainer">
             <div class="footersection">
-                <h3>About EXPLRit</h3>
+                <h3 class="new">About EXPLRit</h3>
                 <p>We are dedicated to providing exceptional travel experiences with carefully crafted packages and personalized service.</p>
                <div class="sociallinks">
   <a href="https://facebook.com/yourpage"><i class="fab fa-facebook-f"></i></a>
@@ -70,7 +167,7 @@
                 <ul class="footerlinks">
                     <li><a href="home.html">Home</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
-                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="package.html">Packages</a></li>
                     <li><a href="blogs.html">Blogs</a></li>
                 </ul>
             </div>
@@ -94,16 +191,17 @@
                 <h3>Newsletter</h3>
                 <p>Subscribe to our newsletter for travel tips and exclusive offers.</p>
                 <form>
-                    <input type="email" placeholder="Enter your email" style="padding:10px; width:100%; margin-bottom:10px; border-radius:5px; border:none">
+                    <input type="email" placeholder="Enter your email" style="padding:10px; width:95%;  margin-left:30px; margin-bottom:10px; border-radius:5px; border:none">
                     <button type="submit" class="btn" style="width:100%;">Subscribe</button>
                 </form>
             </div>
-        </div>
-        
-        <div class="footercopyright">
-            <p>&copy; 2025 Explrit Travel Agency. All rights reserved.</p>
+             <div class="footercopyright">
+            <p>&copy; 2025 EXPLRit Travel Agency. All rights reserved.</p>
         </div>
 
+        </div>
+        
+       
      </footer>
 </body>
 </html>
