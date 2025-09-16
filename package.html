@@ -5,73 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="package.css">
     <title>🌐 EXPLRit-Packages</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-       <header>
-        
+      <header>
         <div class="container">
             <nav>
-                 <div class="logo-container">
-                <div class="logo-row">
-                    <h1 class="logo-text">EXPLRit</h1>
-                    <img src="Explrit logo.png" alt="ExplrIt Company Logo" class="header-logo">
-                </div>
-                <p class="tagline">Explore Beyond Limits</p>
-            </div>
+                <div class="logo-container">
+                    <div class="logo-row">
 
-               
-            <ul class="menu">
-                <li class="item"><a href="index.html" class="navlink"><b>Home</b></a></li>
-                <li class="item"><a href="destinations.html" class="navlink"><b>Destinations</b></a></li>
-                <li class="item"><a href="package.html" class="navlink"><b>Packages</b></a></li>
-                <li class="item"><a href="blogs.html" class="navlink"><b>Blogs</b></a></li>
-            </ul>
+
+                        <h1 class="logo-text">EXPLRit</h1>
+                        <img src="explritlogo2.png" alt="ExplrIt Company Logo" class="header-logo">
+                    </div>
+
+
+                    <p class="tagline">Explore Beyond Limits</p>
+                </div>
+
+
+
+
+
+                <ul class="menu">
+                    <li class="item"><a href="index.html" class="navlink"><b>Home</b></a></li>
+                    <li class="item"><a href="destinations.html" class="navlink"><b>Destinations</b></a></li>
+                    <li class="item"><a href="package.html" class="navlink"><b>Packages</b></a></li>
+
+
+                    <li class="item"><a href="blogs.html" class="navlink"><b>Blogs</b></a></li>
+                </ul>
             </nav>
         </div>
-   
     </header>
     
     <div class="hero-banner">
         <div class="hero-content">
             <h1>Discover your perfect gateway</h1>
+           
             <p>Curated travel experience for every type of adventure</p>
             <a href="#packages" class="cta-button">Explore Package</a>
 
         </div>
 
     </div>
-      
-    <div class="filter-search-section">
+      <div class="filter-search-section">
         <div class="container">
             <div class="filter-container">
                 <div class="filter-options">
-                    <button class="filter-btn-active">All Packages</button>
-                    <button class="filter-btn-active">Beach</button>
-                    <button class="filter-btn-active">Mountains</button>
-                    <button class="filter-btn-active">City</button>
-                    <div class="sort-options">
-                        <select id="sort-packages">
-                            <option value="price-asc">Price:High to Low</option>
-                            <option value="price-desc">Price:Low to High</option>
-                            <option value="duration">duration   </option>
-                            
-                        </select>
-                    </div>
-                    </div>
+      <button class="filter-btn"  >All Packages</button>
+                    <button class="filter-btn"  >Beach</button>
+                    <button class="filter-btn"   >Mountain</button>
+                          <button class="filter-btn"  >City</button>
                 </div>
-                 <div class="search-bar">
-                <input type="text" placeholder="Search packages...">
-                <button><i class="fas fa-search"></i></button>
+                <div class="sort-options">
+                    <select id="sort-packages">
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+         <option value="duration">Duration</option>
+                    </select>
                 </div>
             </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search packages...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
         </div>
-    
+    </div>
+
+      
+   
 
 
-      <div id="packages" class="page">
-        <section class="section">
+      <div id="packages" class="section">
+        
             <div class="container">
                 <h2 class="section-title">Travel Packages</h2>
                 
@@ -83,14 +91,18 @@
                             <h3 class="card-title">Tropical Paradise</h3>
                             <p class="card-text">All-inclusive beach getaway with water activities and spa treatments.</p>
                             <ul class="package-features">
-                                <li><i class="fas fa-check"></i> Luxury beachfront accommodation</li>
+                                <li><i class="fas fa-check"></i> Beachfront accommodation</li>
+                               
                                 <li><i class="fas fa-check"></i> All meals and beverages included</li>
                                 <li><i class="fas fa-check"></i> Snorkeling and kayaking tours</li>
                                 <li><i class="fas fa-check"></i> Sunset cruise</li>
+                               
                                 <li><i class="fas fa-check"></i> Spa treatment package</li>
+                        
                             </ul>
                             <p class="card-price">$1,499 per person</p>
-                        </div>
+                            <button class="book-now">Book Now</button>
+             </div>
                     </div>
                     
                     <div class="package-card" style="--i:2">
@@ -98,60 +110,124 @@
                         <div class="package-duration">5 Days / 4 Nights</div>
                         <div class="card-content">
                             <h3 class="card-title">Mountain Adventure</h3>
-                            <p class="card-text">Thrilling mountain experience with hiking and outdoor activities.</p>
+                           
+             <p class="card-text">Thrilling mountain experience with hiking and outdoor activities.</p>
                             <ul class="package-features">
                                 <li><i class="fas fa-check"></i> Mountain lodge accommodation</li>
                                 <li><i class="fas fa-check"></i> Guided hiking tours</li>
-                                <li><i class="fas fa-check"></i> Zip-lining and rock climbing</li>
+                                      <li><i class="fas fa-check"></i> Zip-lining and rock climbing</li>
                                 <li><i class="fas fa-check"></i> Campfire dinners</li>
                                 <li><i class="fas fa-check"></i> Wildlife spotting excursions</li>
                             </ul>
                             <p class="card-price">$899 per person</p>
+                             <button class="book-now">Book Now</button>
                         </div>
                     </div>
                     
                     <div class="package-card" style="--i:3">
                         <img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="City Package" class="card-img">
                         <div class="package-duration">4 Days / 3 Nights</div>
-                        <div class="card-content">
+             <div class="card-content">
                             <h3 class="card-title">European City Tour</h3>
                             <p class="card-text">Explore the cultural highlights of Europe's most beautiful cities.</p>
                             <ul class="package-features">
                                 <li><i class="fas fa-check"></i> Central hotel accommodation</li>
-                                <li><i class="fas fa-check"></i> Guided city tours</li>
+                      <li><i class="fas fa-check"></i> Guided city tours</li>
                                 <li><i class="fas fa-check"></i> Museum and attraction entries</li>
                                 <li><i class="fas fa-check"></i> Local culinary experiences</li>
                                 <li><i class="fas fa-check"></i> Public transportation pass</li>
                             </ul>
                             <p class="card-price">$799 per person</p>
+                                  <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+     </div>
+            </div>
+        
+    </div>
+                <div class="special-offers">
+                    <div class="container">
+                        <h2 class="section-title">Limited Time Offers</h2>
+                        <div class="offer-banner">
+                            <div class="offer-timer">
+             <p>Special discount ends in</p>
+                                <div class="countdown">
+                                    <span id="days">02</span>
+                                     <span id="hours">12</span>
+                                    <span id="minutes">45</span>
+                                    <span id="seconds">30</span>
+                                </div>
+                            </div>
+                            <div class="offer-content">
+                                <h3>Summer Sal:25% Off All Beach Packages</h3>
+                                <a href="#" class="offer-cta">Book Now</a>
+                            </div>
+               </div>
+                      </div>
+                </div>
+
+                <div class="testimonials">
+                    <div class="container">
+                        <h2 class="section-title">What Our Travellers Say</h2>
+                        <div class="testimonial-container">
+                            <div class="testimonial">
+                  <div class="testimonial-test">"The Tropical Paradise package exceeded all our expectations! The beaches were pristine and the service was impeccable."
+                    </div>
+                    <div class="testimonial-author">
+                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson">
+                        <div>
+                            <p>Sarah Johnson</p>
+                            <small>Tropical Paradise Guest</small>
+                        </div>
+                        </div>
+                            </div>
+
+
+
+                            <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Our mountain adventure was the perfect blend of excitement and relaxation. The guides were knowledgeable and friendly."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mike Thompson">
+                        <div>
+                                <p>Mike Thompson</p>
+                            <small>Mountain Adventure Guest</small>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-
-    <footer>
+                 <div class="testimonial">
+                    <div class="testimonial-text">
+           "The city tour package was perfectly curated. We experienced the authentic culture without any hassle. Will book again!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Jessica Lee">
+                        <div>
+               <p>Jessica Lee</p>
+                            <small>European City Tour Guest</small>
+                        </div>
+                    </div>
+                </div>
+         </div>
+                    </div>
+                </div>
+   <footer>
         <div class="footercontainer">
             <div class="footersection">
                 <h3>About EXPLRit</h3>
-                <p>We are dedicated to providing exceptional travel experiences with carefully crafted packages and personalized service.</p>
-               <div class="sociallinks">
-                  <a href="https://facebook.com/yourpage"><i class="fab fa-facebook-f"></i></a>
-                   <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+       <p>We are dedicated to providing exceptional travel experiences with carefully crafted packages and personalized service.</p>
+                <div class="sociallinks">
+                    <a href="https://facebook.com/yourpage"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
                     <a href="https://instagram.com/yourprofile"><i class="fab fa-instagram"></i></a>
-                 <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin-in"></i></a>
-                 <a href="https://youtube.com/yourchannel"><i class="fab fa-youtube"></i></a>
-                    </div>
-
-         
+                    <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://youtube.com/yourchannel"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
-         
 
-          
             <div class="footersection">
                 <h3>Quick Links</h3>
-                <ul class="footerlinks">
+          <ul class="footerlinks">
                     <li><a href="home.html">Home</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
                     <li><a href="package.html">Packages</a></li>
@@ -161,35 +237,29 @@
             
             <div class="footersection">
                 <h3>Contact Us</h3>
-                <ul class="footerlinks">
-                    <li class="contact"> Nizamuddinpura
-                        <br>
-                        Behind electricity dicision office 2, Varanasi, Uttar Pradesh 221002
-                       
-                    </li>
-                    <li class="contact">Phone: +1 (555) 123-4567</li>
-                    <li class="contact">Email: info@explrit.com</li>
-                    <li class="contact">Fax: +1 (555) 765-4321</li>
-
+           <ul class="footerlinks">
+                    <li>Nizamuddinpura, Behind electricity division office 2</li>
+                    <li>Varanasi, Uttar Pradesh 221002</li>
+                    <li>Phone: +1 (555) 123-4567</li>
+                    <li>Email: info@explrit.com</li>
+                    <li>Fax: +1 (555) 765-4321</li>
                 </ul>
             </div>
 
             <div class="footersection">
                 <h3>Newsletter</h3>
-                <p>Subscribe to our newsletter for travel tips and exclusive offers.</p>
+       <p>Subscribe to our newsletter for travel tips and exclusive offers.</p>
                 <form>
-                    <input type="email" placeholder="Enter your email" style="padding:10px; width:95%;  margin-left:30px; margin-bottom:10px; border-radius:5px; border:none">
-                    <button type="submit" class="btn" style="width:100%;">Subscribe</button>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn">Subscribe</button>
                 </form>
             </div>
-        
-        
-        <div class="footercopyright">
-            <p>&copy; 2025 EXPLRit Travel Agency. All rights reserved.</p>
-        </div>
-        </div>
-    </div>
-     </footer>
+            
+            <div class="footercopyright">
+                <p>&copy; 2025 EXPLRit Travel Agency. All rights reserved.</p>
+            </div>
+                </div>
+    </footer>
 
 </body>
 </html>
