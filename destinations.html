@@ -10,164 +10,433 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-      <header>
-        
+     <body>
+    <header>
         <div class="container">
             <nav>
-                 <div class="logo-container">
-                <div class="logo-row">
-                    <h1 class="logo-text">EXPLRit</h1>
-                    <img src="Explrit logo.png" alt="ExplrIt Company Logo" class="header-logo">
+             
+             
+                <div class="logo-container">
+                    <div class="logo-row">
+                        <h1 class="logo-text">EXPLRit</h1>
+                        <img src="explritlogo2.png" alt="ExplrIt Company Logo" class="header-logo">
+             
+                    </div>
+                    <p class="tagline">Explore Beyond Limits</p>
                 </div>
-                <p class="tagline">Explore Beyond Limits</p>
-            </div>
-
-               
-            <ul class="menu">
-                <li class="item"><a href="index.html" class="navlink"><b>Home</b></a></li>
-                <li class="item"><a href="destinations.html" class="navlink"><b>Destinations</b></a></li>
-                <li class="item"><a href="package.html" class="navlink"><b>Packages</b></a></li>
-                <li class="item"><a href="blogs.html" class="navlink"><b>Blogs</b></a></li>
-            </ul>
+                <ul class="menu">
+                    <li><a href="index.html" class="navlink"><b>Home</b></a></li>
+                    <li><a href="destinations.html" class="navlink"><b>Destinations</b></a></li>
+                    <li><a href="package.html" class="navlink"><b>Packages</b></a></li>
+                    <li><a href="blogs.html" class="navlink"><b>Blogs</b></a></li>
+                </ul>
             </nav>
         </div>
-   
     </header>
-
-    <div id="destinations">
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title"><u>Explore Destinations</u></h2>
-           
-                <input type="radio"  id="filter-all" checked>
-                <input type="radio"  id="filter-beach">
-                <input type="radio"  id="filter-mountain">
-                <input type="radio"  id="filter-city">
-                <input type="radio"  id="filter-cultural">
-                
+    
+    <!-- Destinations Hero  -->
+    <div class="destinations-hero">
+        <div class="destinations-hero-content">
+    
+    
+            <h1 class="destinations-hero-title">Discover Amazing Destinations</h1>
+    
+            <p class="destinations-hero-subtitle">Find your next adventure with our curated selection of breathtaking locations around the world</p>
+        </div>
+    </div>
+    
+    <!-- Destinations Filter -->
+    <div class="destinations-filter">
+        <div class="container">
+    
+    
+            <div class="filter-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search destinations...">
+                    <button><i class="fas fa-search"></i></button>
+    
+                </div>
                 <div class="category-filter">
-                    <label for="filter-all" class="filter-btn"><b>All</b></label>
-                    <label for="filter-beach" class="filter-btn"><b>Beach</b></label>
-                    <label for="filter-mountain" class="filter-btn"><b>Mountains</b></label>
-                    <label for="filter-city" class="filter-btn"><b>City</b></label>
-                    <label for="filter-cultural" class="filter-btn"><b>Cultural</b></label>
-                </div>  
-                 <div class="destinations-grid">
-                    <div class="destination-card beach" style="--i:1">
-                        <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barcelona" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">Barcelona, Spain</h3>
-                            <p class="card-text">Explore Gaudi's architecture and vibrant street life.</p>
-                            <p class="card-price">From $799</p>
+                    <button class="filter-btn active">All</button>
+         
+                          <button class="filter-btn">Beach</button>
+                    <button class="filter-btn">Mountain</button>
+                    <button class="filter-btn">City</button>
+                    <button class="filter-btn">Cultural</button>
+                </div>
+   </div>
+            
+           
+        </div>
+    </div>
+    
+    <!-- Featured Destination -->
+    <div class="container">
+        <article class="featured-destination">
+            <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barcelona" class="featured-img">
+            <div class="featured-content">
+        
+        
+        
+                <span class="featured-badge">Featured Destination</span>
+                <div class="card-meta">
+                    <span class="card-location"><i class="fas fa-map-marker-alt"></i> Barcelona, Spain</span>
+           
+           
+                    <span class="card-rating"><i class="fas fa-star"></i> 4.8</span>
+                </div>
+           
+           
+                <h2 class="card-title">Explore Gaudi's Architecture and Vibrant Street Life</h2>
+                <p class="card-text">Barcelona offers a perfect blend of historic charm and modern attractions, from the iconic Sagrada Familia to the bustling Las Ramblas.</p>
+               
+               
+                <div class="card-price">From $799</div>
+                <p class="price-details">Price includes flight and 4-star accommodation for 7 nights</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </article>
+    </div>
+    
+    <!-- Destinations -->
+    <div id="destinations" class="section">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            
+            <div class="destinations-grid">
+                <article class="destination-card">
+   
+   
+                    <span class="popular-badge">Popular</span>
+                    <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="New York" class="card-img">
+                    <div class="card-content">
+                        <div class="card-meta">
+   
+   
+                            <span class="card-location"><i class="fas fa-map-marker-alt"></i> New York, USA</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.7</span>
                         </div>
-                    </div>
-                    
-                    <div class="destination-card city" style="--i:2">
-                        <img src="https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="New York" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">New York, USA</h3>
-                            <p class="card-text">The city that never sleeps with endless attractions.</p>
-                            <p class="card-price">From $999</p>
+                        <h3 class="card-title">The City That Never Sleeps</h3>
+                                             <p class="card-text">Experience the energy of NYC with its iconic skyline, Broadway shows, and diverse neighborhoods.</p>
+                        <div class="card-features">
+                            <span class="card-feature">Urban</span>
+                            <span class="card-feature">Shopping</span>
+  
+  
+                            <span class="card-feature">Nightlife</span>
                         </div>
+   
+   
+                        <div class="card-price">From $999</div>
+   
+   
+                        <a href="#" class="btn">View Details</a>
                     </div>
-                    
-                    <div class="destination-card city" style="--i:3">
-                        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWl8ZW58MHx8MHx8fDA%3D" alt="Dubai" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">Dubai, UAE</h3>
-                            <p class="card-text">Luxury shopping, ultramodern architecture and lively nightlife.</p>
-                            <p class="card-price">From $1199</p>
+                </article>
+                
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWl8ZW58MHx8MHx8fDA%3D" alt="Dubai" class="card-img">
+                    <div class="card-content">
+   
+   
+                        <div class="card-meta">
+                            <span class="card-location"><i class="fas fa-map-marker-alt"></i> Dubai, UAE</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.9</span>
                         </div>
-                    </div>
-                    
-                    <div class="destination-card beach" style="--i:4">
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bali" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">Bali, Indonesia</h3>
-                            <p class="card-text">A perfect blend of beaches, temples and vibrant culture.</p>
-                            <p class="card-price">From $699</p>
+   
+   
+                        <h3 class="card-title">Luxury and Modern Architecture</h3>
+                        <p class="card-text">Discover the opulence of Dubai with its towering skyscrapers, luxury shopping, and desert adventures.</p>
+                        <div class="card-features">
+   
+   
+   
+                            <span class="card-feature">Luxury</span>
+    
+    
+                            <span class="card-feature">Desert</span>
+                            <span class="card-feature">Shopping</span>
                         </div>
+                        <div class="card-price">From $1199</div>
+                        <a href="#" class="btn">View Details</a>
                     </div>
-                    
-                    <div class="destination-card mountain" style="--i:5">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Switzerland" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">Switzerland</h3>
-                            <p class="card-text">Pristine landscapes and charming alpine villages.</p>
-                            <p class="card-price">From $1299</p>
+                </article>
+    
+                
+
+                <article class="destination-card">
+                    <span class="popular-badge">Trending</span>
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bali" class="card-img">
+                    <div class="card-content">
+
+                        
+                        <div class="card-meta">
+                            <span class="card-location"><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.8</span>
                         </div>
+                        <h3 class="card-title">Tropical Paradise</h3>
+                                                  <p class="card-text">Relax on pristine beaches, explore ancient temples, and immerse yourself in Balinese culture.</p>
+                        <div class="card-features">
+                            <span class="card-feature">Beach</span>
+    
+    
+    
+                            <span class="card-feature">Culture</span>
+                            <span class="card-feature">Wellness</span>
+                        </div>
+                        <div class="card-price">From $699</div>
+                        <a href="#" class="btn">View Details</a>
                     </div>
+                </article>
+                
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Switzerland" class="card-img">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-location"><i class="fas fa-map-marker-alt"></i> Switzerland</span>
+                 
+                 
+                 
+                 
+                 
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <h3 class="card-title">Alpine Wonderland</h3>
+                        <p class="card-text">Experience breathtaking mountain scenery, charming villages, and world-class skiing.</p>
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                        <div class="card-features">
+                            <span class="card-feature">Mountains</span>
+                            <span class="card-feature">Adventure</span>
+                            <span class="card-feature">Nature</span>
+                        </div>
+                        <div class="card-price">From $1299</div>
+                        <a href="#" class="btn">View Details</a>
+                 
+                 
+                 
+                 
+                 
+                    </div>
+                </article>
+                
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1bnNldHxlbnwwfHwwfHx8MA%3D%3D" alt="Tokyo" class="card-img">
+        <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-location"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</span>
+                            <span class="card-rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+           <h3 class="card-title">Traditional Meets Technological</h3>
+                        <p class="card-text">Discover the fascinating blend of ancient traditions and cutting-edge technology in Japan's capital.</p>
+                        <div class="card-features">
+                   <span class="card-feature">Culture</span>
+                            <span class="card-feature">Food</span>
+                            <span class="card-feature">Technology</span>
                     
-                    <div class="destination-card cultural" style="--i:6">
-                        <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1bnNldHxlbnwwfHwwfHx8MA%3D%3D" alt="Tokyo" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">Tokyo, Japan</h3>
-                            <p class="card-text">A fascinating blend of traditional culture and technological innovation.</p>
-                            <p class="card-price">From $1099</p>
+                    
+                        </div>
+                        <div class="card-price">From $1099</div>
+                        <a href="#" class="btn">View Details</a>
+           </div>
+                </article>
+                
+                <article class="destination-card">
+                    <span class="popular-badge">New</span>
+           <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Santorini" class="card-img">
+               
+               
+               
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-location"><i class="fas fa-map-marker-alt"></i> Santorini, Greece</span>
+                   <span class="card-rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+               <h3 class="card-title">Stunning Mediterranean Views</h3>
+                        <p class="card-text">Enjoy breathtaking sunsets, white-washed buildings, and crystal-clear waters in this Greek paradise.</p>
+                        <div class="card-features">
+                      
+                      
+                      
+                            <span class="card-feature">Beach</span>
+                            <span class="card-feature">Romance</span>
+                            <span class="card-feature">History</span>
+                        </div>
+         
+         
+                        <div class="card-price">From $899</div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+             
+             
+                </article>
+       
+       
+            </div>
+        </div>
+    </div>
+    
+    <!-- Testimonials -->
+    <section class="testimonials" aria-label="Customer testimonials">
+        <div class="container">
+       
+       
+       
+            <h2 class="section-title" style="color: white;">What Travelers Say</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+       
+       
+                    <p class="testimonial-text">"EXPLRit helped me discover the most amazing destinations I would never have found on my own. Their recommendations were spot on!"</p>
+    
+    
+    
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jessica Miller" class="author-img">
+     
+     
+                        <div class="author-details">
+       
+       
+       
+                            <h4>Jessica Miller</h4>
+                            <p>Frequent Traveler</p>
                         </div>
                     </div>
                 </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The detailed information about each destination made planning our trip so easy. We knew exactly what to expect and weren't disappointed!"</p>
+       
+       
+       
+       
+       
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-img">
+                        <div class="author-details">
+       
+       
+       
+                            <h4>Michael Chen</h4>
+                      <p>Adventure Seeker</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I've booked three trips through EXPLRit and each one has been better than the last. Their destination guides are incredibly helpful."</p>
+         
+         
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="author-img">
+                        <div class="author-details">
+      
+      
+                            <h4>Sarah Johnson</h4>
+                            <p>World Explorer</p>
+                        </div>
+                    </div>
+                        </div>
+                </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter  -->
+    <section class="newsletter-section" aria-label="Subscribe to newsletter">
+        <div class="container">
+            <div class="newsletter-container">
+                <h2>Get Travel Inspiration</h2>
+         
+         
+                <p>Subscribe to our newsletter and receive destination guides and exclusive travel offers</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" aria-label="Email address">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
             </div>
-        </section>
-    </div>
-
-
-                  <footer>
+                   </div>
+    </section>
+    
+    <footer>
         <div class="footercontainer">
             <div class="footersection">
                 <h3>About EXPLRit</h3>
+       
                 <p>We are dedicated to providing exceptional travel experiences with carefully crafted packages and personalized service.</p>
-               <div class="sociallinks">
-  <a href="https://facebook.com/yourpage"><i class="fa-brands fa-facebook-f"></i></a>
-  <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
-  <a href="https://instagram.com/yourprofile"><i class="fab fa-instagram"></i></a>
-  <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://youtube.com/yourchannel"><i class="fab fa-youtube"></i></a>
-</div>
-
+                <div class="sociallinks">
          
+                    <a href="https://facebook.com/yourpage" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/yourprofile" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/yourprofile" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://youtube.com/yourchannel" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
-         </div>
-
-          
+            
             <div class="footersection">
                 <h3>Quick Links</h3>
                 <ul class="footerlinks">
-                    <li><a href="home.html">Home</a></li>
+         
+         
+         
+         
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
-                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="package.html">Packages</a></li>
                     <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+         
+         
                 </ul>
             </div>
             
             <div class="footersection">
                 <h3>Contact Us</h3>
                 <ul class="footerlinks">
-                    <li class="contact"> Nizamuddinpura
-                        <br>
-                        Behind electricity dicision office 2, Varanasi, Uttar Pradesh 221002
-                       
-                    </li>
-                    <li class="contact">Phone: +1 (555) 123-4567</li>
-                    <li class="contact">Email: info@explrit.com</li>
-                    <li class="contact">Fax: +1 (555) 765-4321</li>
-
-                </ul>
+                    <li>Nizamuddinpura, Behind electricity division office 2</li>
+          
+          
+                    <li>Varanasi, Uttar Pradesh 221002</li>
+                  <li>Phone: +1 (555) 123-4567</li>
+                    <li>Email: info@explrit.com</li>
+                             <li>Fax: +1 (555) 765-4321</li>
+          </ul>
             </div>
-
+            
             <div class="footersection">
                 <h3>Newsletter</h3>
                 <p>Subscribe to our newsletter for travel tips and exclusive offers.</p>
                 <form>
-                    <input type="email" placeholder="Enter your email"style="padding:10px; width:95%; ; margin-left:30px; margin-bottom:10px; border-radius:5px; border:none">
-                    <button type="submit" class="btn" style="width:100%;">Subscribe</button>
+                           <input type="email" placeholder="Enter your email" aria-label="Email address">
+                    <button type="submit" class="btn">Subscribe</button>
                 </form>
             </div>
+            
+            <div class="footercopyright">
+                         <p>&copy; 2025 EXPLRity. All rights reserved.</p>
+            </div>
         </div>
-        
-      
-
-     </footer>
+    </footer>
+    
+   
 </body>
 </html>
 
